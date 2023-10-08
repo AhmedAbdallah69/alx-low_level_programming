@@ -7,10 +7,9 @@
 int main(void)
 {
 	char ch = 'a';
-	
-	int i=0;
+	int i = 0;
 
-	while (i<26)
+	while (i < 26)
 	{
 		putchar(ch);
 		ch++;
