@@ -2,7 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * using for loob to determine if a number is positive or not
+ * main - Uses a for loop to determine if a number is positive or not
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
