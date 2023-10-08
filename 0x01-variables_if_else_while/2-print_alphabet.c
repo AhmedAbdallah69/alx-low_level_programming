@@ -7,11 +7,15 @@
 int main(void)
 {
 	char ch = 'a';
-	for (int i=0; i<26; i++)
+	
+	int i=0;
+
+	while (i<26)
 	{
 		putchar(ch);
 		putchar('\n');
 		ch++;
+		i++;
 	}
 	return (0);
 }
