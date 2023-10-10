@@ -9,6 +9,7 @@ void print_alphabet(void)
 {
 	char ch = 'a';
 	int i = 0, j = 0;
+
 	while (j < 10)
 	{
 	while (i < 26)
@@ -19,5 +20,7 @@ void print_alphabet(void)
 	}
 	_putchar('\n');
 	j++;
+	i = 0;
+	ch = 'a';
 	}
 }
