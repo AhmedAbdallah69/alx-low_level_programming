@@ -8,8 +8,9 @@
 void print_alphabet(void)
 {
 	char ch = 'a';
-	int i = 0;
-
+	int i = 0, j = 0;
+	while (j < 10)
+	{
 	while (i < 26)
 	{
 	_putchar(ch);
@@ -17,4 +18,6 @@ void print_alphabet(void)
 	i++;
 	}
 	_putchar('\n');
+	j++;
+	}
 }
