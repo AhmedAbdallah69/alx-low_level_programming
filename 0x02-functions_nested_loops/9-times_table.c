@@ -15,6 +15,8 @@ void times_table(void)
 	{
 		_putchar('0'+i*j);
 		_putchar(',');
+		_putchar(' ');
+		_putchar(' ');
 	}
 		else {
 		k=i*j/10;
@@ -22,6 +24,7 @@ void times_table(void)
 		_putchar('0'+k);
 		_putchar('0'+l);
 		_putchar(',');
+		_putchar(' ');
 	}
 	}
 	_putchar('\n');
