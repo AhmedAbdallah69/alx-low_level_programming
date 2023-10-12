@@ -1,8 +1,6 @@
 #include "main.h"
-
 /**
- * print_alphabet - a function to print the alphabet
- *
+ * main - testing a function.
  * Return: Always 0
  */
 int main(void)
