@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * more_numbers - a function that prints numbers from 0 to 14.
- * Return: Always int.
+ * Return: Always void.
  */
 void more_numbers(void)
 {
