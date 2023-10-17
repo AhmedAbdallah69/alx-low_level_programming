@@ -1,22 +1,24 @@
 #include <stdio.h>
 /**
- * print_rev - a function that reverses a string.
+ * rev_string - a function that reverses a string.
  * @s: string to be acted upon.
  * Return: Always void.
  */
 #include <stdio.h>
-void rev_string(char *s) {
-	int length;
-	for (length = 0; s[length] != 0; length++);
-	int start = 0;
-	int end = length - 1;
+void rev_string(char *s)
+{
+	int length, start, end;
 	char temp;
-	while (start < end) {
-	// Swap characters at the start and end positions
+
+	for (length = 0; s[length] != 0; length++)
+		;
+	start = 0;
+	end = length - 1;
+	while (start < end)
+	{
 	temp = s[start];
 	s[start] = s[end];
 	s[end] = temp;
-	// Move the start and end pointers towards each other
 	start++;
 	end--;
 	}
