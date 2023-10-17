@@ -5,7 +5,7 @@ int size, i, j;
 	for (i = 0; src[i] != '\0'; ++i)
 		;
 	size = i + 1;
-	for (j = 0; j < i; ++j)
+	for (j = 0; j < size; ++j)
 	{
 		dest[j] = src[j];
 	}
