@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * puts_half - a function that prints the last half of a string.
  * @str: string to be acted upon.
@@ -16,7 +17,7 @@ void puts_half(char *str)
 			n = (length - 1) / 2;
 	for (i = n; i < length; ++i)
 	{
-		putchar(str[i]);
+		_putchar(str[i]);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
