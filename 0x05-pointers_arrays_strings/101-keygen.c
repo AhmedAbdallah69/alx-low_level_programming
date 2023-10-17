@@ -16,13 +16,13 @@ int main(void)
 
     srand(time(NULL));
 
-    while (sum <=2648)
+    while (sum <= 2645)
     {
         c = rand() % 128;
         sum += c;
         putchar(c);
     }
 
-    putchar(3269 - sum);
+    putchar(2772 - sum);
     return (0);
 }
