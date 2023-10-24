@@ -9,8 +9,9 @@ void print_diagsums(int *a, int size)
 {
 	int primary_diag_sum = 0;
 	int secondary_diag_sum = 0;
+	int i;
 
-	for (int i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 	{
 		primary_diag_sum += a[i * size + i];
 		secondary_diag_sum += a[i * size + size - i - 1];
