@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 /**
  * _strstr - Write a function that locates a substring.
  *
@@ -12,18 +10,24 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	while (*haystack)
+	while (*haystack != '\0')
 	{
-		char *temp;
-
-		temp = haystack;
-		while (*needle == *haystack)
+		if (*haystack == *needle)
 		{
-			haystack++, needle++;
+			char *hp = haystack;
+			char *np = needle;
+
+		while (*np != '\0')
+		{
+			if (*hp != *np)
+				break;
+			np++;
+			hp++;
 		}
-		if (*needle == '\0')
-			return (temp);
+		if (*np == '\0')
+			return (haystack);
+		}
 		haystack++;
 	}
-	return (0);
+	return ('\0');
 }
