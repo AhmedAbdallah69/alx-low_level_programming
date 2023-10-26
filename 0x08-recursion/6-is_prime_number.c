@@ -25,5 +25,5 @@ int prime(int n, int x)
  */
 int is_prime_number(int n)
 {
-	return (n, 2);
+	return (prime(n, 2));
 }
