@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * _puts - a function that prints a string similar to 'puts'.
