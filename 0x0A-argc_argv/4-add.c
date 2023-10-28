@@ -2,7 +2,6 @@
 #include <stdlib.h>
 /**
  * main - Program that adds positive numbers
-
  * @argc: This is the argument count
  * @argv: This is the argument vector
  *
@@ -10,17 +9,17 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, result;
+	int i, x, result;
 
 	result = 0;
-	if (argc == 1)
+	if (argc < 3)
 	{
 		printf("%d\n", 0);
 		return (0);
 	}
 	for (i = 1; i < argc; ++i)
 	{
-		int x = strtol(argv[i], NULL, 10);
+		x = strtol(argv[i], NULL, 10);
 
 		if (x == 0)
 		{
@@ -31,5 +30,5 @@ int main(int argc, char *argv[])
 			result += x;
 	}
 	printf("%d\n", result);
-	 return (0);
+	return (0);
 }
