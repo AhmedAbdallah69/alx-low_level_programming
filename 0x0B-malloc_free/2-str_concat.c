@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * str_concat - function that concatenates two strings.
  *              if NULL is passed, treat it as an empty string
@@ -10,13 +9,12 @@
  * @s2: This is the input string
  *
  * Return: The returned pointer should point to a newly allocated space in
- *         memory which contains the contents of s1, followed by the contents 
+ *         memory which contains the contents of s1, followed by the contents
  *         of s2, and null terminated
  */
-
 char *str_concat(char *s1, char *s2)
 {
-	int a, b;
+	int i, j;
 	char *s;
 
 	if (s1 == NULL)
@@ -27,25 +25,24 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	for (a = 0; s1[a] != '\0'; a++)
+	for (i = 0; s1[i] != '\0'; ++i)
 	{
 	}
-	for (b = 0; s2[b] != '\0'; b++)
+	for (j = 0; s1[j] != '\0'; ++j)
 	{
 	}
-
-	s = (char *)  malloc(((a + b) + 1) * sizeof(char));
+	s = (char *) malloc((i + j + 1) * sizeof(char));
 
 	if (s == NULL)
 		return (NULL);
-	for (a = 0; s1[a] != '\0'; a++)
+
+	for (i = 0; s1[i] != '\0'; ++i)
+		s[i] = s1[i];
+
+	for (j = 0; s2[j] != '\0'; ++j)
 	{
-		s[a] = s1[a];
-	}
-	for (b = 0; s2[b] != '\0'; b++)
-	{
-		s[a] = s2[b];
-		a++;
+		s[i] = s2[j];
+		i++;
 	}
 	return (s);
 }
