@@ -9,10 +9,13 @@ char *_strdup(char *str)
 	unsigned int i, size = 0, j;
 	char *s;
 
+	if (str == NULL)
+		return (NULL);
+
 	for (i = 0; str[i]  != '\0'; ++i)
 	size++;
 
-	s = malloc(sizeof(char) * size);
+	s = malloc(sizeof(char) * (size + 1));
 
 	if (s == NULL)
 		return (NULL);
@@ -20,6 +23,6 @@ char *_strdup(char *str)
 	for (j = 0; j < size; ++j)
 		s[j] = str[j];
 
-	s[size] = '\0';
+	s[size + 1] = '\0';
 	return (s);
 }
