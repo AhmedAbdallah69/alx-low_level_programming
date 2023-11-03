@@ -13,7 +13,7 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *t, *p;
+	int *t, *p, i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
@@ -23,7 +23,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (t == NULL)
 		return (NULL);
 
-	for (int i = 0; i < nmemb; ++i)
+	for (i = 0; i < nmemb; ++i)
 		t[i] = 0;
 
 	p = (void *) t;
