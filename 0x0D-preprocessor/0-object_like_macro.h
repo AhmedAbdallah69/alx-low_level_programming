@@ -1,0 +1,8 @@
+//
+// Created by Ahmed Abdallah on 11/7/2023.
+//
+
+#ifndef UNTITLED3_0_OBJECT_LIKE_MACRO_H
+#define UNTITLED3_0_OBJECT_LIKE_MACRO_H
+#define SIZE 1024
+#endif //UNTITLED3_0_OBJECT_LIKE_MACRO_H
