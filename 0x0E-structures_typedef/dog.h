@@ -1,10 +1,19 @@
-#ifndef UNTITLED3_DOG_H
-#define UNTITLED3_DOG_H
-
-struct dog{
-    char* name;
-    float age;
-    char* owner;
+#ifndef DOG_H
+#define DOG_H
+/**
+ * struct dog - structure about info of a dog.
+ *
+ * @name: its name.
+ * @age: its age.
+ * @owner: its owner.
+ *
+ * Description: No longer Description.
+ */
+struct dog
+{
+	char *name;
+	float age;
+	char *owner;
 };
 
 #endif
