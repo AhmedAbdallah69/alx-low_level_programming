@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include "dog.h"
 /**
@@ -10,14 +11,38 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dog;
+	int i = 0;
 
 	new_dog = malloc(sizeof(dog_t));
+
 	if (new_dog == NULL)
 		return (NULL);
 
-	new_dog->name = name;
+	new_dog->name = malloc(sizeof(name));
+	if ((new_dog)->name == NULL)
+	{
+		free(new_dog);
+		return (NULL);
+	}
+	new_dog->owner = malloc(sizeof(owner));
+	if ((new_dog)->owner == NULL)
+	{
+		free(new_dog->name);
+		free(new_dog);
+		return (NULL);
+	}
+	for (i = 0; name[i]; ++i)
+		new_dog->name[i] = name[i];
+
+	new_dog->name[i] = '\0';
+
+	for (i = 0; owner[i]; ++i)
+		new_dog->owner[i] = owner[i];
+
+	new_dog->owner[i] = '\0';
+
 	new_dog->age = age;
-	new_dog->owner = owner;
 
 	return (new_dog);
 }
+
