@@ -13,7 +13,7 @@ int _strlen(char *s)
 	return (i);
 }
 /**
- * create_file - Create a new files
+ * append_text_to_file - Create a new files
  * @filename: Name of the file
  * @text_content: Content of the file
  * Return: Success is 1, and if failed is -1
