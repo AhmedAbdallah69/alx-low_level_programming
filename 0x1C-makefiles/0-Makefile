@@ -1,6 +1,2 @@
-#The objective is compiler the program called holberton.c
-all: holberton
-
-holberton: main.c holberton.c
-	gcc main.c holberton.c -o holberton
-
+all:
+	gcc school.c main.c -o school
