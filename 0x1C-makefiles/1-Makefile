@@ -1,0 +1,5 @@
+#The objective is compiler the program called holberton.c with variables 
+CC=gcc
+SRC=main.c holberton.c
+all:
+	$(CC) $(SRC) -o holberton
